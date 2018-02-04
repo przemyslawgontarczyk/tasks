@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class DbService {
     @Autowired
@@ -18,12 +19,15 @@ public class DbService {
     public List<Task> getAlTasks() {
         return repository.findAll();
     }
+
     public Optional<Task> getTaskById(final Long id) {
         return repository.findById(id);
     }
+
     public Task saveTask(final Task task) {
         return repository.save(task);
     }
+
     public void deleteTask(Long id) {
         repository.deleteById(id);
     }
