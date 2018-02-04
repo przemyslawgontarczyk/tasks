@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import javax.persistence.*;
 
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity(name = "tasks")
 public class Task {
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "name")
