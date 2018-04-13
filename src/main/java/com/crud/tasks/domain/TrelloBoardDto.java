@@ -15,21 +15,15 @@ import java.util.Optional;
 @Getter
 public class TrelloBoardDto {
 
-    @JsonProperty("name")
-    private String name;
-
     @JsonProperty("id")
     private String id;
+
+    @JsonProperty("name")
+    private String name;
 
     @JsonProperty("lists")
     private List<TrelloListDto> lists;
 
-    public Optional getName() {
-        return Optional.ofNullable(name);
-    }
 
-    public Optional getId() {
-        return Optional.ofNullable(id);
-    }
 
 }
