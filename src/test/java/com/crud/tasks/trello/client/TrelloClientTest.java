@@ -92,9 +92,9 @@ public class TrelloClientTest {
     }
 
     @Test
-    public  void shouldReturnEmptyList() throws URISyntaxException {
-// Given
+    public void shouldReturnEmptyList() throws URISyntaxException {
 
+        // Given
 
         URI uri = new URI("http://test.com/members/przemyslawgontarczyk/boards?key=test&token=test&fields=name,id&lists=all");
 
